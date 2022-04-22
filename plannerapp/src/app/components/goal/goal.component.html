@@ -1,0 +1,21 @@
+
+
+<ion-list>
+  <ion-item *ngIf="goal.status === 'started'">
+    <ion-label>{{goal.name}}</ion-label>
+    <ion-checkbox     (ionChange)="checkboxClick()"  slot="start" ></ion-checkbox>
+  </ion-item>
+</ion-list>
+<ion-content>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title1</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+</ion-content>

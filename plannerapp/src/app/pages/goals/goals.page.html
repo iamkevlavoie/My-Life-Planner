@@ -1,0 +1,90 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Goals1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<!-- test -->
+<body>
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Goal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label (click)="nextpagehome()">Home</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label (click)="nextpagegoals()">Goals</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label (click)="nextpageaddgoal()">Add Goal</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label (click)="nextpageachievements()">Achievements</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label (click)="nextpagenotes()">Notes</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpageaddnote()">Add Note</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpagevideo()">Video Diary</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpageimage()">Images Diary</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  
+
+  <div  id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Goal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+   
+  </div>
+  
+
+
+  <!-- content -->
+<ion-content [fullscreen]="true"> 
+  
+
+  
+
+  
+  <div *ngFor="let g of goals">  
+    <app-goal [goal]="g" ></app-goal>
+
+  </div>
+
+  <ion-button class=""    (click)="nextpageaddgoal()">Add a Goal</ion-button>
+
+</ion-content>
+
+</ion-app>
+</body>

@@ -1,0 +1,29 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Achievements
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+  <!-- content -->
+<ion-content [fullscreen]="true">
+  
+
+  
+
+  
+  <div *ngFor="let g of goals">  
+    <app-achievementgoals [goal]="g" ></app-achievementgoals>
+
+  </div>
+
+  <div *ngFor="let t of tasks">
+    <app-achievementtasks [task]="t"></app-achievementtasks>
+  </div>
+
+ 
+
+
+  <ion-button >Home</ion-button>

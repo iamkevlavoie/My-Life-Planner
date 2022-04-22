@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      To Do List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- content -->
+
+<ion-content [fullscreen]="true">
+
+  <div *ngFor="let t of tasks">
+    <app-task [task]="t"></app-task>
+  </div>
+  <div class="center">
+    <ion-button (click)="nextpageaddtask()">Add a Task</ion-button>
+  </div>
+</ion-content>

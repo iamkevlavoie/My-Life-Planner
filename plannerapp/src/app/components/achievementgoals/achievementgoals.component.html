@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item *ngIf="goal.status === 'completed'">
+    <ion-label>{{goal.name}}</ion-label>
+    <ion-checkbox     (ionChange)="checkboxClick()"  slot="start" ></ion-checkbox>
+  </ion-item>
+</ion-list>

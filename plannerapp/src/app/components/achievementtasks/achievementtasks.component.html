@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item *ngIf="task.status === 'completed'">
+    <ion-label>{{task.name}}</ion-label>
+    <ion-checkbox     (ionChange)="checkboxClick()"  slot="start" ></ion-checkbox>
+  </ion-item>
+</ion-list>

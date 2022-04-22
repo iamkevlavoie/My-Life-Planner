@@ -1,0 +1,83 @@
+
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Home1</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label (click)="nextpagehome()">Home</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label (click)="nextpagegoals()">Goals</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label (click)="nextpageaddgoal()">Add Goal</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label (click)="nextpageachievements()">Achievements</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label (click)="nextpagenotes()">Notes</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpageaddnote()">Add Note</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpagevideo()">Video Diary</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label (click)="nextpageimage()">Images Diary</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  
+
+  <div  id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+   
+  </div>
+
+  <ion-content>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title1</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+  
+  
+</ion-app>
+
+
+
+
+
+  

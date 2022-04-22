@@ -1,0 +1,12 @@
+
+<ion-list>
+  <ion-item *ngIf="task.status === 'not done' ||task.status === 'started'" >
+    <ion-label>{{task.name}}</ion-label>
+    <ion-label>{{task.description}}</ion-label>
+    <ion-label>{{task.date_of_start}}</ion-label>
+    <ion-checkbox  (ionChange)="checkboxClick1()" slot="start" ></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+
+<!-- task.status === 'not done' ||  -->
